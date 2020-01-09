@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
 $backgroundColor: #ffffff;
 $bodyColor: #000000;
-$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-$headerColor: red;
+$bodyFont: 'Montserrat', sans-serif;
+$secondColor: #f0a303;
 
 body {
   background: $backgroundColor;
@@ -10,6 +12,42 @@ body {
 }
 
 header {
-  background: $headerColor;
-  height: 10vh;
+  background: $secondColor;
+  height: 12.5vh;
+}
+
+.logo{
+  height: 5rem;
+  margin: 0.5rem;
+}
+
+.menu a{
+  text-decoration: none;
+  color: white;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  font-weight: 400;
+}
+
+.menu{
+  text-align: right;
+  margin: 2rem 0.5rem 2rem 0rem;
+}
+
+.carrousel{
+  height: 87.5vh;
+}
+
+.carrousel h5, .carrousel p{
+  color: black;
+}
+
+.carousel-inner, .carousel-item{
+  height: 100%;
+}
+
+footer{
+  background: $secondColor;
+  height: 12.5vh;
+  color: white;
 }
