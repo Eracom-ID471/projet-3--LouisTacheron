@@ -5,6 +5,10 @@ $bodyColor: #000000;
 $bodyFont: 'Montserrat', sans-serif;
 $secondColor: #f0a303;
 
+.container-fluid{
+  padding: 0;
+}
+
 body {
   background: $backgroundColor;
   color: $bodyColor;
@@ -47,8 +51,38 @@ header {
   height: 100%;
 }
 
+.couleur-opacity{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: $secondColor;
+  opacity:0.55;
+}
+
+.categorie-slider{
+  font-size: 6rem;
+  font-weight: 800;
+}
+
+.titre-slider{
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.texte-slider{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .article{
-  height: 100vh;
+  height: 400vh;
+  padding: 5rem 5rem 0rem 5rem;
+}
+
+.img-article{
+  width: 30rem;
 }
 
 footer{

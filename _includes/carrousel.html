@@ -10,10 +10,11 @@
             {% else %}
             <div class="carousel-item">
               {% endif %}
+              <div class="couleur-opacity"></div>
               <img class="d-block w-100" src="{{ post.image | relative_url}}">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Nulla vitae</h5>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <div class="carousel-caption d-none d-md-block texte-slider">
+                <h5 class="categorie-slider text-white">{{ post.categorie }}</h5>
+                <p class="titre-slider text-white">{{ post.titre }}</p>
               </div>
             </div>
             {% endfor %}

@@ -4,21 +4,17 @@
   <body>
     <header>{% include header.html %}</header>
     <section>{% include carrousel.html %}</section>
-    <!-- <section class="container article">
+    <section class="container-fluid article">
       <div class="row">
-        <div class="col-4">
         {% for post in site.posts %}
-          {% if post.featured %}
-          <img src="{{ post.image | relative_url}}" />
-          {% endif %}
+          <div class="col-4 ">
+          <img class="img-article" src="{{ post.image | relative_url}}" />
+          <h1>{{ post.categorie }}</h1>
+          <h2>{{ post.titre }}</h2>
+          </div>
         {% endfor %}
-        </div>
-        <div class="col-4">
-        </div>
-        <div class="col-4">
-        </div>
       </div>
-    </section>  -->
+    </section>
     <footer>{% include footer.html %}</footer>
   </body>
 </html>

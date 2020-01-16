@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Culture"
+---
+
+<section class="article container-fluid">
+  <div class="row">
+    {% for post in site.posts %}
+      {% if post.categorie =="Culture" %}
+        <div class="col-4 ">
+          <img class="img-article" src="{{ post.image | relative_url}}" />
+          <h1>{{ post.sous-categorie }}</h1>
+          <h2>{{ post.titre }}</h2>
+        </div>
+        {% endif %}
+    {% endfor %}
+  </div>
+</section>
