@@ -5,4 +5,5 @@ texte: "Onzième au général avant l'étape 9 de ce mardi entre Wadi Al-Dawasir
 image: "assets/images/yodeli.jpg"
 categorie: Sport
 sous-categorie: Rallye
+featured: true
 ---
