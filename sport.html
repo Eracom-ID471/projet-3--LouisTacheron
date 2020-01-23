@@ -8,9 +8,9 @@ title: "Sport"
     {% for post in site.posts %}
       {% if post.categorie =="Sport" %}
         <div class="col-4 ">
-          <img class="img-article" src="{{ post.image | relative_url}}" />
-          <h1>{{ post.sous-categorie }}</h1>
-          <h2>{{ post.titre }}</h2>
+          <a href="article.html"><img class="img-article" src="{{ post.image | relative_url}}" /></a>
+          <h1 class="titre-article">{{ post.sous-categorie }}</h1>
+          <h2 class="sous-titre-article">{{ post.titre }}</h2>
         </div>
         {% endif %}
     {% endfor %}

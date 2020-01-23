@@ -20,6 +20,10 @@ header {
   height: 12.5vh;
 }
 
+a:hover{
+  text-decoration: none;
+}
+
 .logo{
   height: 5rem;
   margin: 1rem;
@@ -77,12 +81,16 @@ header {
 }
 
 .article{
-  height: 125vh;
+  height: 215vh;
   padding: 5rem 5rem 0rem 5rem;
 }
 
 .img-article{
   width: 30rem;
+}
+
+.img-article-develloper{
+  width: 100%;
 }
 
 footer{
@@ -96,4 +104,16 @@ footer{
   font-size: 1.1rem;
   font-weight: 400;
   margin-top: 2.5rem;
+}
+
+.titre-article{
+  font-weight: 800;
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+.sous-titre-article{
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
 }
