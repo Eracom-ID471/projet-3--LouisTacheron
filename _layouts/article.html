@@ -4,14 +4,12 @@
   <body>
     <header>{% include header.html %}</header>
     <section>
-      {% for post in site.posts %}
         <div class="col-12 ">
-        <img class="img-article-develloper" src="{{ post.image | relative_url}}" />
-        <h1 class="titre-article">{{ post.categorie }}</h1>
-        <h2 class="sous-titre-article">{{ post.titre }}</h2>
-        <p>{{ post.texte }}</p>
+          <h1 class="titre-article titre-article-develloper">{{ page.sous-categorie }}</h1>
+          <h2 class="sous-titre-article sous-titre-article-develloper">{{ page.titre }}</h2>
+        <img class="img-article-develloper" src="{{ page.image | relative_url}}" />
+          <p class="texte-article-develloper">{{ page.texte }}</p>
         </div>
-      {% endfor %}
     </section>
     <footer>{% include footer.html %}</footer>
   </body>

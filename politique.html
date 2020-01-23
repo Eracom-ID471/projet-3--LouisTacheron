@@ -8,7 +8,9 @@ title: "Politique"
     {% for post in site.posts %}
       {% if post.categorie =="Politique" %}
         <div class="col-4 ">
-          <a href="article.html"><img class="img-article" src="{{ post.image | relative_url}}" /></a>
+          <a href="{{post.url | relative_url }}">
+          <div class="couleur-opacity-petit"></div>
+          <img class="img-article" src="{{ post.image | relative_url}}" /></a>
           <h1 class="titre-article">{{ post.sous-categorie }}</h1>
           <h2 class="sous-titre-article">{{ post.titre }}</h2>
         </div>

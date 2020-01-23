@@ -1,13 +1,15 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-1">
-      <img class="logo" src="{{ "/assets/images/logo.png" | relative_url }}" />
+      <a href="{{ '/index.html'| relative_url }}">
+      <img class="logo" src="{{ '/assets/images/logo.png' | relative_url }}" />
+      </a>
     </div>
     <div class="col-11">
       <nav class="menu">
-        <a href="index.html">Acceuil</a>
-        <a href="sport.html">Sport</a>
-        <a href="politique.html">Politique</a>
+        <a href="{{ '/index.html'| relative_url }}">Acceuil</a>
+        <a href="{{ '/sport.html'| relative_url }}">Sport</a>
+        <a href="{{ '/politique.html'| relative_url }}">Politique</a>
       </nav>
     </div>
   </div>
