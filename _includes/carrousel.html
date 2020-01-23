@@ -13,8 +13,8 @@
               <div class="couleur-opacity"></div>
               <img class="d-block w-100" src="{{ post.image | relative_url}}">
               <div class="carousel-caption d-none d-md-block texte-slider">
-                <a href="article.html"><h5 class="categorie-slider text-white">{{ post.categorie }}</h5></a>
-                <a href="article.html"><p class="titre-slider text-white">{{ post.titre }}</p></a>
+                <a href="{{post.url | relative_url }}"><h5 class="categorie-slider text-white">{{ post.categorie }}</h5></a>
+                <a href="{{post.url | relative_url }}"><p class="titre-slider text-white">{{ post.titre }}</p></a>
               </div>
             </div>
             {% endfor %}
